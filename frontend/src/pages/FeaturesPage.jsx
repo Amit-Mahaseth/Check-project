@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { ArrowLeft, Code2, Brain, Shield, Zap, Globe, MessageSquare, Github, TrendingUp, Users, Award, Rocket } from 'lucide-react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import TextRoll from '../components/TextRoll'
 
 const FeaturesPage = () => {
     const navigate = useNavigate()
@@ -140,7 +141,9 @@ const FeaturesPage = () => {
                         className="text-center mb-20"
                     >
                         <h1 className="text-6xl md:text-7xl font-black mb-6">
-                            <span className="gradient-text-blue">Powerful Features</span>
+                            <TextRoll center className="gradient-text-blue inline-block">
+                                Powerful Features
+                            </TextRoll>
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
                             Everything you need to code faster, smarter, and with confidence. 

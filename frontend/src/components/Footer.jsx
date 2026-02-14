@@ -1,5 +1,6 @@
 import React from 'react'
 import { Github, Twitter, Linkedin, Heart } from 'lucide-react'
+import TextRoll from './TextRoll'
 
 const Footer = () => {
     return (
@@ -8,7 +9,9 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="col-span-2">
-                        <h3 className="text-2xl font-black gradient-text-blue mb-4">CodeSherpa</h3>
+                        <TextRoll className="text-2xl font-black gradient-text-blue inline-block mb-4">
+                            CodeSherpa
+                        </TextRoll>
                         <p className="text-gray-400 mb-4">
                             Your AI pair programmer built for Indian developers. 
                             Code smarter, ship faster, learn better.

@@ -11,6 +11,7 @@ import Footer from '../components/Footer'
 import FeatureCard from '../components/FeatureCard'
 import StatsCounter from '../components/StatsCounter'
 import TestimonialCard from '../components/TestimonialCard'
+import TextRoll from '../components/TextRoll'
 
 const HomePage = () => {
     const navigate = useNavigate()
@@ -143,7 +144,9 @@ const HomePage = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-6xl md:text-8xl font-black mb-6 leading-tight"
                     >
-                        <span className="gradient-text-blue">CodeSherpa</span>
+                        <TextRoll center className="gradient-text-blue inline-block">
+                            CodeSherpa
+                        </TextRoll>
                         <br />
                         <span className="text-4xl md:text-6xl text-gray-300">
                             Your AI Pair Programmer
@@ -228,7 +231,9 @@ const HomePage = () => {
                         className="text-center mb-16"
                     >
                         <h2 className="text-5xl md:text-6xl font-black mb-6">
-                            <span className="gradient-text-blue">Powerful Features</span>
+                            <TextRoll center className="gradient-text-blue inline-block">
+                                Powerful Features
+                            </TextRoll>
                         </h2>
                         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                             Everything you need to code faster, smarter, and with confidence
@@ -254,7 +259,9 @@ const HomePage = () => {
                         className="text-center mb-16"
                     >
                         <h2 className="text-5xl md:text-6xl font-black mb-6">
-                            <span className="gradient-text-blue">How It Works</span>
+                            <TextRoll center className="gradient-text-blue inline-block">
+                                How It Works
+                            </TextRoll>
                         </h2>
                         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                             Get started in three simple steps
@@ -320,7 +327,9 @@ const HomePage = () => {
                         className="text-center mb-16"
                     >
                         <h2 className="text-5xl md:text-6xl font-black mb-6">
-                            <span className="gradient-text-blue">Loved by Developers</span>
+                            <TextRoll center className="gradient-text-blue inline-block">
+                                Loved by Developers
+                            </TextRoll>
                         </h2>
                         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                             See what developers across India are saying

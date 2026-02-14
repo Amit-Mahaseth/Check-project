@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import ReactMarkdown from 'react-markdown'
+import TextRoll from '../components/TextRoll'
 
 const ChatPage = () => {
     const navigate = useNavigate()
@@ -136,7 +137,9 @@ const ChatPage = () => {
                                 <Sparkles className="w-5 h-5" />
                             </div>
                             <div>
-                                <h1 className="font-bold text-lg">CodeSherpa</h1>
+                                <TextRoll className="font-bold text-lg inline-block">
+                                    CodeSherpa
+                                </TextRoll>
                                 <div className="flex items-center gap-2 text-xs">
                                     <span className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
                                     <span className="text-gray-400">{isConnected ? 'Online' : 'Offline'}</span>

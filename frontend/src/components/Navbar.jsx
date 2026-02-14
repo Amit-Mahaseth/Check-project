@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { Sparkles, Menu, X, Github } from 'lucide-react'
+import TextRoll from './TextRoll'
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -41,7 +42,9 @@ const Navbar = () => {
                         <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                             <Sparkles className="w-5 h-5" />
                         </div>
-                        <span className="text-xl font-black gradient-text-blue">CodeSherpa</span>
+                        <TextRoll className="text-xl font-black gradient-text-blue inline-block">
+                            CodeSherpa
+                        </TextRoll>
                     </button>
 
                     {/* Desktop Navigation */}
