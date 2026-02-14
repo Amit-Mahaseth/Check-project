@@ -12,6 +12,7 @@ import FeatureCard from '../components/FeatureCard'
 import StatsCounter from '../components/StatsCounter'
 import TestimonialCard from '../components/TestimonialCard'
 import TextRoll from '../components/TextRoll'
+import DarkVeil from '../components/DarkVeil'
 
 const HomePage = () => {
     const navigate = useNavigate()
@@ -108,24 +109,22 @@ const HomePage = () => {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
-                {/* Floating orbs */}
-                <motion.div
-                    className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
-                    animate={{
-                        y: [0, 30, 0],
-                        scale: [1, 1.1, 1],
-                    }}
-                    transition={{ duration: 8, repeat: Infinity }}
-                />
-                <motion.div
-                    className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
-                    animate={{
-                        y: [0, -30, 0],
-                        scale: [1, 1.2, 1],
-                    }}
-                    transition={{ duration: 10, repeat: Infinity }}
-                />
+            <section className="relative min-h-screen flex items-center justify-center px-4 pt-20 overflow-hidden">
+                {/* DarkVeil Animated Background */}
+                <div className="absolute inset-0 opacity-40">
+                    <DarkVeil
+                        hueShift={180}
+                        noiseIntensity={0.05}
+                        scanlineIntensity={0}
+                        speed={0.3}
+                        scanlineFrequency={0}
+                        warpAmount={0.2}
+                        resolutionScale={0.8}
+                    />
+                </div>
+
+                {/* Gradient overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-transparent to-slate-950/80 pointer-events-none" />
 
                 <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <motion.div
