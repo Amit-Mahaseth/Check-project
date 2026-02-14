@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+boto3
+botocore
+langchain
+langchain-anthropic
+redis
+httpx
+jinja2
+loguru
+python-dotenv
+passlib
+pytest
