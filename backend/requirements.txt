@@ -1,16 +1,53 @@
-fastapi
-uvicorn[standard]
-websockets
-pydantic
-pydantic-settings
-boto3
-botocore
-langchain
-langchain-anthropic
-redis
-httpx
-jinja2
-loguru
-python-dotenv
-passlib
-pytest
+# ===== CORE FASTAPI =====
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# ===== DATABASE =====
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+pyodbc==5.0.1  # Optional: SQL Server support
+
+# ===== AUTHENTICATION & SECURITY =====
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.1
+cryptography==41.0.7
+python-multipart==0.0.6
+
+# ===== AWS & BEDROCK =====
+boto3==1.29.7
+botocore==1.32.7
+
+# ===== AI & LLM INTEGRATION =====
+langchain==0.1.0
+langchain-anthropic==0.1.0
+langchain-community==0.0.20
+
+# ===== UTILITIES =====
+redis==5.0.1
+httpx==0.25.2
+jinja2==3.1.2
+loguru==0.7.2
+python-dotenv==1.0.0
+requests==2.31.0
+PyYAML==6.0.1
+
+# ===== TESTING & DEVELOPMENT =====
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx[http2]==0.25.2
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# ===== EMAIL (Optional) =====
+email-validator==2.1.0
+aiosmtplib==3.0.1
+
+# ===== LOGGING & MONITORING =====
+structlog==23.3.0
+
